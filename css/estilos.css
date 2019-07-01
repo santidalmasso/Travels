@@ -140,6 +140,10 @@ nav{
     align-self: flex-start;
 }
 
+.travels_hero p{
+    margin: 0;
+}
+
 .travels_button{
     width: 100%;
     border: none;
