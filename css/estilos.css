@@ -48,6 +48,8 @@ nav{
 
 .logo_text{
     margin-left: 5px;
+    color: white;
+    text-decoration: none;
 }
 
 .nav_logo img{
@@ -63,10 +65,19 @@ nav{
     display: inherit;
     list-style: none;
     height: 100%;
+    margin: 0;
 }
 
 .nav_options li{
     margin: 0 15px;
+    display: flex;
+}
+
+.nav_options a{
+    height: 100%;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
 }
 
 .nav_options li:hover{
