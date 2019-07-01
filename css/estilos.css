@@ -17,6 +17,11 @@ body{
     font-family: var(--font-Dosis)
 }
 
+hr{
+    border: 1px solid var(--blumine-color);
+    margin: 0;
+}
+
 nav{
     background-color: var(--blumine-color);
     color: white;
@@ -118,7 +123,7 @@ nav{
     background-color: rgba(255, 255, 255, .1);
     max-width: 200px;
     transition: .3s;
-    box-shadow: 0 0 1em 0 rgb(35, 79, 102);
+    box-shadow: 0 0 1em 0 var(--blueD-color);
 }
 
 .travels_hero:hover{
@@ -158,6 +163,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-bottom: 10vh;
 }
 
 .company{
@@ -186,3 +192,65 @@ nav{
 }
 
 /* ----------------------------MENTIONS------------------------ */
+
+.owners{
+    height: 700px;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+}
+
+.owners_title{
+    text-align: center;
+    margin: 0;
+    padding: 2.5em;
+    font-weight: 400;
+}
+
+.container_owners{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.owner{
+    max-width: 250px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 2em 0 var(--blueD-color);
+}
+
+.owner img{
+    width: 100%;
+}
+
+.owner_text{
+    padding: 0 1em;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    padding: 0 25px;
+    font-weight: 500;
+    height: 40px;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer p:hover{
+    cursor: pointer;
+}
+
+footer a{
+    display: inline-block;
+    color: rgb(49, 116, 151);
+}
