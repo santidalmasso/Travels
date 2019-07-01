@@ -100,7 +100,8 @@ nav{
 }
 
 .container_hero{
-    height: 500px;
+    height: auto;
+    margin-bottom: 20vh;
     display: flex;
     justify-content: center;
 }
@@ -133,3 +134,55 @@ nav{
     font-size: 1.4em;
     align-self: flex-start;
 }
+
+.travels_button{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: .6em .8em .8em;
+    font-weight: 500;
+    background-color: #999;
+    cursor: pointer;
+    box-shadow: inset 0 -.2em rgba(0,0,0,.4);
+    outline: 0;
+}
+
+.travels_button:hover{
+    background-color: rgb(58, 98, 119);
+}
+
+/* ----------------------------BENEFITS------------------------ */
+
+.companies{
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.company{
+    width: 250px;
+    color: white;
+    margin: 40px;
+    font-size: 1em;
+}
+
+.company_image{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.company:nth-child(3) img{
+    width: 200px;
+}
+
+.company_image img{
+    width: 100%;
+}
+
+.company p{
+    margin: .2em;
+}
+
+/* ----------------------------MENTIONS------------------------ */
