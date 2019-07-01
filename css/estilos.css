@@ -1,20 +1,24 @@
 /* 
-blue-color: rgb(35, 79, 102)
-font-family: Space Mono', monospace;
+Blumine-color: rgb(35, 79, 102)
+Blue Dianne-color:rgb(21, 61, 73);
+Font-family: Space Mono', monospace;
+Font-family: font-family: 'Dosis', sans-serif;
 
 */
 
 :root{
-    --blue-color:rgb(35, 79, 102);
+    --blumine-color:rgb(21, 61, 73);
+    --blueD-color:rgb(35, 79, 102);
     --font-Mont:'Space Mono', monospace;
+    --font-Dosis: 'Dosis', sans-serif;
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-Dosis)
 }
 
 nav{
-    background-color: var(--blue-color);
+    background-color: var(--blumine-color);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -22,6 +26,9 @@ nav{
     height: 50px;
     font-size: 15px;
     padding: 0 2em;
+    position: relative;
+    z-index: 2;  
+    box-shadow: 0 -10px 20px 1px black;
 }
 
 .nav_logo{
@@ -61,4 +68,52 @@ nav{
     font-weight: 900;
     cursor: pointer;
     height: 100%;
+}
+
+
+/* ---------------------------- HERO ------------------------------- */
+
+.hero{
+    height: 100vh;
+    position: relative;
+    /* background-color: var(--blueD-color); */
+    background-image: url(https://i.redd.it/s9aq5rg1yhcy.png);
+    background-size: 120%;
+    background-position: top center;
+    z-index: 1;
+}
+
+.container_hero{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.travels_hero{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 4em;
+    margin-top: 10em;
+    padding: 1.5em;
+    color: white;
+    background-color: rgba(255, 255, 255, .1);
+    max-width: 200px;
+    transition: .3s;
+    box-shadow: 0 0 7em 0 rgb(35, 79, 102);
+}
+
+.travels_hero:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.travels_hero img{
+    max-width: 200px;
+}
+
+.travels_hero h1{
+    font-size: 1.4em;
+    align-self: flex-start;
 }
