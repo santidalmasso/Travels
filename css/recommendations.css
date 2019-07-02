@@ -1,7 +1,11 @@
+body{
+    background-color: black;
+}
+
 .recommendations{
     height: auto;
     padding: 8vw;
-    background-color: #333333;
+    /* background-color: black; */
     color: white;
     box-shadow: inset 0 -200px 250px 20px black;
 }
