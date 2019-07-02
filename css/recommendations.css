@@ -1,0 +1,39 @@
+.recommendations{
+    height: auto;
+    padding: 8vw;
+    background-color: #333333;
+    color: white;
+    box-shadow: inset 0 -200px 250px 20px black;
+}
+
+.container_reco{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.reco_text{
+    grid-column-end: span 2;
+    padding: 20px;
+}
+
+.reco_text h3{
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.reco_text p{
+    font-size: 18px;
+}
+
+.reco_image{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.reco_image img{
+    width: 100%;
+    object-fit: contain;
+}
