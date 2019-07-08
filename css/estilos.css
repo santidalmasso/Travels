@@ -269,3 +269,37 @@ footer a{
     display: inline-block;
     color: rgb(49, 116, 151);
 }
+
+/* ----------------------- ANIMATION LOAD ---------------- */
+
+.hidden{
+    overflow: hidden;
+}
+
+.animation-load{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--blueD-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fadeOut{
+    animation: fadeOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
