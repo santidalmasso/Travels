@@ -84,6 +84,7 @@ nav{
     font-weight: 900;
     cursor: pointer;
     height: 100%;
+    text-decoration: underline;
 }
 
 
@@ -120,6 +121,7 @@ nav{
     margin-bottom: 20vh;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .travels_hero{
@@ -209,7 +211,7 @@ nav{
 /* ----------------------------MENTIONS------------------------ */
 
 .owners{
-    height: 700px;
+    min-height: 700px;
     background-color: black;
     color: white;
     padding-top: 20px;
@@ -226,6 +228,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .owner{
@@ -234,6 +237,7 @@ nav{
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 2em 0 var(--blueD-color);
+    margin: 20px;
 }
 
 .owner img{
@@ -257,17 +261,19 @@ footer{
     height: 40px;
 }
 
-footer p{
+footer a{
     margin: 0;
-}
-
-footer p:hover{
-    cursor: pointer;
 }
 
 footer a{
     display: inline-block;
-    color: rgb(49, 116, 151);
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+footer .email{
+    color:rgb(49, 116, 151);
 }
 
 /* ----------------------- ANIMATION LOAD ---------------- */
@@ -302,4 +308,18 @@ footer a{
     to{
         opacity: 0;
     }
+}
+
+
+/* ----------------------- RESPONSIVE ---------------- */
+
+@media screen and (max-width: 1023px){
+
+    
+}
+
+@media screen and (max-width: 760px){
+    .hero{
+        background-position: top left;
+    }   
 }

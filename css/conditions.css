@@ -1,0 +1,25 @@
+body{
+    background: black;
+}
+
+.conditions{
+    background: black;
+    color: white;
+    max-width: 800px;
+    margin: 80px auto;
+}
+
+.conditions-title{
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.conditions p{
+    margin: 0;
+    line-height: 125%;
+}
+
+.conditions strong{
+    color:rgb(49, 116, 151);
+    text-transform: uppercase;
+}
