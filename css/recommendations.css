@@ -41,3 +41,25 @@ body{
     width: 100%;
     object-fit: contain;
 }
+
+@media screen and (max-width: 767px){
+    .recommendations{
+        padding-top: 90px;
+    }
+    .container_reco{
+        display: grid;
+        grid-template: repeat(6, auto)/1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    .reco_text{
+        grid-column: 1;
+        height: auto;
+    }
+    .reco_image{
+        max-width: 400px;
+    }
+    .text-2{
+        grid-row-start: 4;
+    }
+}
