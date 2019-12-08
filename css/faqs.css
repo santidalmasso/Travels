@@ -61,3 +61,23 @@ p.infor {
 .item:last-child:hover .info:last-child{
     border-radius: 0 0 10px 10px;
 }
+
+@media screen and (max-width: 767px){
+    .faqs {
+        margin: 90px auto 40px;
+        width: 90%;
+    }
+    .item{
+        width: auto;
+    }
+
+    .title{
+        width: auto;
+    }
+    .info{
+        width: auto;
+    }
+    .item:hover .info{
+        height: auto;
+    }
+}

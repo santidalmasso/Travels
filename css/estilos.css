@@ -318,8 +318,74 @@ footer .email{
     
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 767px){
+    nav{
+        display: flex;
+        width: 100%;
+        position: fixed;
+        z-index: 6;
+        align-items: center;
+        top: 0;
+    }
+    .nav_options {
+        position: fixed;
+        background: rgba(21, 61, 73, .9);
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        height: auto;  
+        z-index: 5;
+        top:-100px;
+        right: -100vw;
+        border-radius: 0 0 0 20px;
+        border-top: none;
+        width: 40%;
+        transition: .3s;
+    }
+    .is-active{
+        right: -1px;
+        top: 49px;
+    }
+    .nav_options ul{
+        display: block;
+        padding: 0;
+    }
+    .nav_options li{
+        display: block;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+    }
+    .nav_options li:first-child{
+        border-bottom: 1px solid white;
+    }
+    .nav_options a{
+        display: flex;
+        width: 100%;
+        justify-content: center
+    }
     .hero{
         background-position: top left;
-    }   
+    }
+    .burger-button.fas{
+        display: block;
+    }
+    
+}
+
+/* ----------------------- HAMBURGUER BUTTON ---------------- */
+.burger-button{
+    display: none;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    z-index: 10;
+    top: 10px;
+    right: 30px;
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
 }
