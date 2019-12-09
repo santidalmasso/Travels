@@ -285,7 +285,7 @@ footer .email{
 
 .animation-load{
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     left: 0;
     right: 0;
     top: 0;
@@ -391,11 +391,8 @@ footer .email{
 }
 @media screen and (max-width: 500px){
     .travels_hero{
-        margin: 50px auto;
+        margin: 40px auto 10px;
         pointer-events: visibleStroke;
-    }
-    .nav_options {
-        
     }
     footer{
         padding: 10px;

@@ -80,10 +80,11 @@ p.infor {
     .info{
         width: auto;
     }
-    .item:focus .info{
-        height: auto;
+    .item:hover .info{
+        height: inherit;
+        /* pointer-events: visibleStroke; */
     }
-    .item {
-        /* pointer-events: none; */
+    .show-info{
+        height: auto;
     }
 }

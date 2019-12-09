@@ -13,7 +13,7 @@ function hideShow(){
 
 
 if(window.matchMedia("(max-width:700px)").matches){
-  const itemList = document.querySelectorAll('.title')
+  const itemList = document.querySelectorAll('.item')
   itemList.forEach(item =>{
   item.addEventListener('click', showItem)
   })
@@ -21,9 +21,11 @@ if(window.matchMedia("(max-width:700px)").matches){
   function showItem(){
     const info = event.target.parentElement.parentElement.lastElementChild
     itemList.forEach(item =>{
-      console.log(item.parentElement.lastElementChild)
-      item.parentElement.lastElementChild.classList.remove('show-info')
+      item.lastElementChild.classList.remove('show-info')
     })
-    info.classList.add('show-info')
+    if(info.classList.contains('info')){
+      info.classList.add('show-info')
+    }
+    console.log(info)
   }
 }
