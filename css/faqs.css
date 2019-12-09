@@ -55,11 +55,14 @@ p.infor {
 }
 
 .item:hover .info{
-    height: 80px;
+    height: 90px;
 }
 
 .item:last-child:hover .info:last-child{
     border-radius: 0 0 10px 10px;
+}
+.show-info{
+    height: auto;
 }
 
 @media screen and (max-width: 767px){
@@ -77,7 +80,10 @@ p.infor {
     .info{
         width: auto;
     }
-    .item:hover .info{
+    .item:focus .info{
         height: auto;
+    }
+    .item {
+        /* pointer-events: none; */
     }
 }

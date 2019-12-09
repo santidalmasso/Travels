@@ -14,7 +14,7 @@ Font-family: font-family: 'Dosis', sans-serif;
 }
 
 body{
-    font-family: var(--font-Dosis)
+    font-family: var(--font-Dosis);
 }
 
 hr{
@@ -142,6 +142,7 @@ nav{
 .travels_hero:hover{
     transform: scale(1.2);
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .travels_hero img{
@@ -336,14 +337,15 @@ footer .email{
         height: auto;  
         z-index: 5;
         top:-100px;
-        right: -100vw;
+        right: -200px;
         border-radius: 0 0 0 20px;
         border-top: none;
         width: 40%;
+        min-width: 200px;
         transition: .3s;
     }
     .is-active{
-        right: -1px;
+        right: 0;
         top: 49px;
     }
     .nav_options ul{
@@ -367,10 +369,38 @@ footer .email{
     .hero{
         background-position: top left;
     }
+    .hero_title{
+        margin: 50px 0 40px
+    }
     .burger-button.fas{
         display: block;
     }
-    
+    .travels_button:hover{
+        background-color: #999;
+        box-shadow: inset 0 -.2em rgba(0,0,0,.4);
+    }
+    .travels_button:active{
+        background-color: rgb(58, 98, 119);
+    }
+    .travels_hero{
+        pointer-events: visibleStroke;
+    }
+    .owner{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 500px){
+    .travels_hero{
+        margin: 50px auto;
+        pointer-events: visibleStroke;
+    }
+    .nav_options {
+        
+    }
+    footer{
+        padding: 10px;
+        font-size: 14px;
+    }
 }
 
 /* ----------------------- HAMBURGUER BUTTON ---------------- */
